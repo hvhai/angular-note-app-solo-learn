@@ -6,5 +6,6 @@
 <button (click)="clickMe()">Click me</button>
 <p [class.red]="isRed">Bloody text</p>
 <button (click)="switchBackgroundColor()">Change color</button>
+<div *ngFor="let product of products">{{product}}</div>
 <router-outlet></router-outlet>
 

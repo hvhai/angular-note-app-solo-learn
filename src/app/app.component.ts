@@ -1,3 +1,4 @@
+import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
@@ -11,6 +12,7 @@ export class AppComponent {
   isHighlight = true;
   myMultipleClasses = ['red', 'uppercase'];
   isRed = false;
+  products = ['banana', 'orange', 'apple'];
 
   clickMe() {
     alert('Wellcome!');
