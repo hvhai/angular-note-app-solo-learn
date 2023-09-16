@@ -3,5 +3,8 @@
 <input title="Angular attribute binding" type="text" [attr.aria-lable]="inputName">
 <p [class.highlight]="isHighlight">Highlight text</p>
 <p [class]="myMultipleClasses">myMultipleClasses binding</p>
+<button (click)="clickMe()">Click me</button>
+<p [class.red]="isRed">Bloody text</p>
+<button (click)="switchBackgroundColor()">Change color</button>
 <router-outlet></router-outlet>
 
