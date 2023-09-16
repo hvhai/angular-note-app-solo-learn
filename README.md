@@ -31,3 +31,23 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ng generate component Header --standalone --inline-template
 
 ```
+Binding
+
+By DOM property
+<https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API>
+
+By attribute => add prefix attr.
+
+ Binding allows to assign dynamic values to DOM properties and HTML attributes
+
+⭐ To bind a property, simply place its name in square brackets and assign it to the expression in double quotes
+
+```HTML
+<input [value]="someVal">
+```
+⭐ Attributes use a similar syntax for binding, and need to be prefixed with attr.
+
+```HTML
+<button [attr.aria-label]="btnName">Click Me</button>
+```
+⭐ You can also set the class of elements using `[class.name]="expression"` for a single class, or `[class]="expression"` for multiple classes

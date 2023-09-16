@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'photoEditor';
+  inputName = 'my attrribute name';
+  isHighlight = true;
+  myMultipleClasses = ['red', 'uppercase']
+
 }

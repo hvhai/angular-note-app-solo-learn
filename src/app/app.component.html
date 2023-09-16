@@ -1,4 +1,7 @@
 <app-header/>
 <h1>Hello from Angular</h1>
+<input title="Angular attribute binding" type="text" [attr.aria-lable]="inputName">
+<p [class.highlight]="isHighlight">Highlight text</p>
+<p [class]="myMultipleClasses">myMultipleClasses binding</p>
 <router-outlet></router-outlet>
 
