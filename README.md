@@ -59,3 +59,23 @@ In template-driven forms, you can define form validations in the template, just 
 To track the validity of the form, give it a name using the ngForm directive (e.g. #myForm="ngForm"), then access the state using myForm.form.valid.
 
 The ng-valid and ng-invalid CSS classes can be used to style the form controls based on their state.
+
+## Reactive form
+Reactive forms are more effective to build larger forms, as the form is controlled by the class.
+
+To create a reactive form:
+
+- Import the ReactiveFormsModule and FormControl
+- Then declare your form controls, like: color = new FormControl('red');
+- Connect the control in the template
+  ```HTML
+  <input type="text" [formControl] = "color" />
+  ```
+- Access the value of the form control: color.value
+
+### Form group
+To group form controls, use the FormGroup constructor and pass it your form controls as name:constructor pair.
+
+Then use the [formGroup] directive to bind it to your form.
+
+To create validations, use the Validators class and pass it to your form control constructors, as the second parameter.
