@@ -29,8 +29,9 @@
     type="text"
     [(ngModel)]="name"
     name="username"
+    required
   />
-  <input type="submit" value="Submit" />
+  <input type="submit" value="Submit" [disabled]="!myForm.form.valid" />
 </form>
 
 <router-outlet></router-outlet>

@@ -51,3 +51,11 @@ By attribute => add prefix attr.
 <button [attr.aria-label]="btnName">Click Me</button>
 ```
 ⭐ You can also set the class of elements using `[class.name]="expression"` for a single class, or `[class]="expression"` for multiple classes
+
+## Validation form
+
+In template-driven forms, you can define form validations in the template, just like with simple HTML forms.
+
+To track the validity of the form, give it a name using the ngForm directive (e.g. #myForm="ngForm"), then access the state using myForm.form.valid.
+
+The ng-valid and ng-invalid CSS classes can be used to style the form controls based on their state.
