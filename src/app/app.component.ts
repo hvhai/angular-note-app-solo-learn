@@ -12,9 +12,14 @@ export class AppComponent {
   myMultipleClasses = ['red', 'uppercase'];
   isRed = false;
   products = ['banana', 'orange', 'apple'];
+  name = 'Hai';
 
   clickMe() {
     alert('Wellcome!');
+  }
+
+  showName() {
+    alert(this.name)
   }
 
   switchBackgroundColor() {
