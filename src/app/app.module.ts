@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from 'src/header/header.component';
 import { NoteListComponent } from 'src/note-list/note-list.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AddNoteComponent } from 'src/add-note/add-note.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     HeaderComponent,
     NoteListComponent,
+    AddNoteComponent,
     FormsModule,
     ReactiveFormsModule
   ],
