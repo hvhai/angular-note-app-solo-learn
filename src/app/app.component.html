@@ -1,5 +1,5 @@
 <app-header />
-
+<router-outlet></router-outlet>
 <h1>Hello from Angular</h1>
 
 <input
@@ -66,4 +66,3 @@
   <input type="button" value="Reset" (click)="loginForm.reset()" />
   <input type="submit" value="Submit" [disabled]="!loginForm.valid" />
 </form>
-<router-outlet></router-outlet>
