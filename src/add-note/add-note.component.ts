@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
   FormControl,
@@ -7,11 +7,12 @@ import {
   Validators,
 } from '@angular/forms';
 import { NOTES } from 'src/note';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-add-note',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, RouterModule],
   templateUrl: './add-note.component.html',
   styleUrls: ['./add-note.component.css'],
 })
@@ -20,6 +21,8 @@ export class AddNoteComponent {
     title: new FormControl('', Validators.required),
     text: new FormControl('', Validators.required),
   });
+
+  router = inject(Router);
 
   addNote() {
     let title = this.addNoteForm.value.title ?? '';
@@ -38,6 +41,8 @@ export class AddNoteComponent {
       };
       NOTES.unshift(newNote);
       this.addNoteForm.reset();
+
+      this.router.navigateByUrl('/')
     }
   }
 }
