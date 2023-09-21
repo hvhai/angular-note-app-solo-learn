@@ -31,7 +31,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ng generate component Header --standalone --inline-template
 
 ```
-Binding
+## Binding
 
 By DOM property
 <https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API>
@@ -79,3 +79,19 @@ To group form controls, use the FormGroup constructor and pass it your form cont
 Then use the [formGroup] directive to bind it to your form.
 
 To create validations, use the Validators class and pass it to your form control constructors, as the second parameter.
+
+## ⭐ Router
+
+Now you know how to create an app with routing! Here are the steps:
+
+- Import the RouterModule from @angular/router
+- Define the routes configuration array, in the format path: 'string', component: component class
+- Launch the app with the routes config, using providers: [provideRouter(routes)]
+- Define the links where applicable using the routerLink attribute.
+- Use the <router-outlet /> element to display the component that corresponds to the path
+- The Angular Router provides all the necessary methods to set up your app navigation
+- You can set the default path using an empty set of quotes ''
+- Page titles are set using the title property
+- You can use a wildcard path ** for all URLs that are not matched
+- The order of the paths matters, as the router starts checking from the first URL and stops when a match is found
+- You can use the navigateByUrl() method of the router to navigate to a path programmatically
