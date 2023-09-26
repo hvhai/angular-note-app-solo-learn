@@ -101,3 +101,6 @@ Now you know how to create an app with routing! Here are the steps:
 ```shell
 npx npm-check-updates --upgrade --target "minor" --filter "/@angular.*/"
 ```
+
+### Reference
+[Angular Project Part 6: Opening Notes P2](https://www.sololearn.com/learn/courses/angular/lesson/1565139484?p=2)
