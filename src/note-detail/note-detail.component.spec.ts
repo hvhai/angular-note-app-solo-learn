@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NoteDetailComponent } from './note-detail.component';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('NoteDetailComponent', () => {
   let component: NoteDetailComponent;
@@ -8,7 +9,7 @@ describe('NoteDetailComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [NoteDetailComponent]
+      imports: [NoteDetailComponent, RouterTestingModule],
     });
     fixture = TestBed.createComponent(NoteDetailComponent);
     component = fixture.componentInstance;
