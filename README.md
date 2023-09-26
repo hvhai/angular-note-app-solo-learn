@@ -95,3 +95,9 @@ Now you know how to create an app with routing! Here are the steps:
 - You can use a wildcard path ** for all URLs that are not matched
 - The order of the paths matters, as the router starts checking from the first URL and stops when a match is found
 - You can use the navigateByUrl() method of the router to navigate to a path programmatically
+
+### upgrade minor version of angular
+
+```shell
+npx npm-check-updates --upgrade --target "minor" --filter "/@angular.*/"
+```
